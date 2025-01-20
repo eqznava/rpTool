@@ -1,0 +1,109 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .circle-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .circle-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .circle-link:hover {
+    transform: translateY(-10px); /* Efecto "levantar" */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+  }
+  
+  .circle-item {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .label {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .circle-link:focus {
+    outline: none;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25); /* Hover al presionar */
+  }
+  
+  /* Adaptación para dispositivos móviles */
+  @media (max-width: 768px) {
+        .circle-container {
+            gap: 15px;
+        }
+    
+        .circle-item {
+            width: 70px;
+            height: 70px;
+        }
+        
+        .icon {
+            font-size: 20px;
+        }
+        
+        .label {
+            font-size: 12px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .circle-item {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .icon {
+            font-size: 18px;
+        }
+        
+        .label {
+            font-size: 10px;
+        }
+    }
