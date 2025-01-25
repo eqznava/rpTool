@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Links</title>
-  <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Framework</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <div class="circle-container">
-      <!-- Circle 1: About -->
-      <a href="#" class="circle-link">
-        <div class="circle-item">
-          <div class="icon">&#8505;</div>
+    <header class="header">
+        <div class="headerLeft">Left side</div>
+        <div class="headerRight">Right side</div>
+    </header>
+
+    <main class="main">
+        <div class="mainAbout">
+            <button class="aboutButton" aria-label="About nuclear information">
+                <img src="img/about.png" alt="About nuclear information">
+            </button>
+            <p class="aboutLabel">About...</p>
         </div>
-        <span class="label">About</span>
-      </a>
-      <!-- Circle 2: Tools -->
-      <a href="#" class="circle-link">
-        <div class="circle-item">
-          <div class="icon">&#128295;</div>
+        <div class="mainTools">
+            <button class="toolsButton" aria-label="Radiation protection tools">
+                <img src="img/tools.png" alt="Radiation protection tools">
+            </button>
+            <p class="toolsLabel">Tools</p>
         </div>
-        <span class="label">Tools</span>
-      </a>
-      <!-- Circle 3: Nuclear Facilities -->
-      <a href="#" class="circle-link">
-        <div class="circle-item">
-          <div class="icon">&#9889;</div>
+        <div class="mainNuclearFacilities">
+            <button class="nuclearFacilitiesButton" aria-label="Nuclear facilities">
+                <img src="img/nuclear.png" alt="Nuclear facilities">
+            </button>
+            <p class="nuclearFacilitiesLabel">Nuclear Facilities</p>
         </div>
-        <span class="label">Nuclear Facilities</span>
-      </a>
-      <!-- Circle 4: FAQ -->
-      <a href="#" class="circle-link">
-        <div class="circle-item">
-          <div class="icon">&#10067;</div>
+        <div class="mainFAQ">
+            <button class="FAQButton" aria-label="Frequently Asked Questions about nuclear">
+                <img src="img/faq.png" alt="Frequently Asked Questions about nuclear">
+            </button>
+            <p class="FAQLabel">FAQ</p>
         </div>
-        <span class="label">FAQ</span>
-      </a>
-    </div>
-  </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footerLeft">Developed by Sergio Arturo Enriquez Nava</div>
+        <div class="footerRight">Copyright 2025</div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
